@@ -24,6 +24,10 @@ public class CreateNewBusinessTest extends Action {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+    /**
+     * automate creating a business
+     * @throws InterruptedException
+     */
     @Test
     public void createBusiness() throws InterruptedException {
         int size;

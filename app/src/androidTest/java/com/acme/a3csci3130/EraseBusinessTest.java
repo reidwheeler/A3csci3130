@@ -32,6 +32,10 @@ public class EraseBusinessTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+    /**
+     * automate creating a business then erasing it
+     * @throws InterruptedException
+     */
     @Test
     public void eraseBusiness() throws InterruptedException {
         clickItemWithId(R.id.submitButton);

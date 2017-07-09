@@ -32,6 +32,10 @@ public class CreateContactAcitivity extends Activity {
         provinceField = (EditText) findViewById(R.id.province);
     }
 
+    /**
+     * Save new contact to db
+     * @param v
+     */
     public void submitInfoButton(View v) {
         //each entry needs a unique ID
         String ID = appState.firebaseReference.push().getKey();

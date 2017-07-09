@@ -52,12 +52,20 @@ public class MainActivity extends Activity {
         });
     }
 
+    /**
+     * Open create contact activity on button click
+     * @param v
+     */
     public void createContactButton(View v)
     {
         Intent intent=new Intent(this, CreateContactAcitivity.class);
         startActivity(intent);
     }
 
+    /**
+     * open detailed contact view when contact is clicked
+     * @param person
+     */
     private void showDetailView(Contact person)
     {
         Intent intent = new Intent(this, DetailViewActivity.class);

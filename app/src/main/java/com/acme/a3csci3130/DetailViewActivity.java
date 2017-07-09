@@ -40,6 +40,10 @@ public class DetailViewActivity extends Activity {
         }
     }
 
+    /**
+     * Updates contact fields and saves to db
+     * @param v
+     */
     public void updateContact(View v){
         DatabaseReference contactsRef = Database.child("contacts");
         selectedBusiness = (Contact)getIntent().getSerializableExtra("Contact");
@@ -60,6 +64,10 @@ public class DetailViewActivity extends Activity {
         startActivity(intent);
     }
 
+    /**
+     * Remove contact from db
+     * @param v
+     */
     public void eraseContact(View v)
     {
         DatabaseReference contactsRef = Database.child("contacts");

@@ -36,6 +36,10 @@ public class UpdateBusinessTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+    /**
+     * select a business and update it
+     * @throws InterruptedException
+     */
     @Test
     public void updateBusiness() throws InterruptedException {
         clickItemWithId(R.id.submitButton);
