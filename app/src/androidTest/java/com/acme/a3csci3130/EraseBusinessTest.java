@@ -36,12 +36,14 @@ public class EraseBusinessTest {
     public void eraseBusiness() throws InterruptedException {
         clickItemWithId(R.id.submitButton);
         type(R.id.businessNumber, "123456789");
-        type(R.id.name, "erase test");
+        type(R.id.name, "test");
         type(R.id.primaryBusiness, "fisher");
         type(R.id.address, "123 test street");
         Espresso.closeSoftKeyboard();
         type(R.id.province, "NS");
         Espresso.closeSoftKeyboard();
         clickItemWithId(R.id.submitButton);
+        clickFirstOnList(listView);
+        clickItemWithId(R.id.deleteButton);
     }
 }
