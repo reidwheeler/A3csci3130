@@ -56,6 +56,8 @@ public class DetailViewActivity extends Activity {
         updates.put("address", address);
         updates.put("province", province);
         selectedContactRef.updateChildren(updates);
+        Intent intent=new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void eraseContact(View v)
